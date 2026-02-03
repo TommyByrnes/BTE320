@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN9PjiKuiNU/BE6HgDvNIXI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/TommyByrnes/BTE320/blob/main/Simple%20Calculator\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rFpYPAt8DaN6",
+        "outputId": "c9aa9255-e860-4b10-8e8e-b9bf9548b7d5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 6\n",
+            "Enter operator (+, -, *, /): *\n",
+            "Enter second number: 3\n",
+            "Result: 18.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Simple Calculator\n",
+        "\n",
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "operator = input(\"Enter operator (+, -, *, /): \")\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "if operator == \"+\":\n",
+        "    result = num1 + num2\n",
+        "elif operator == \"-\":\n",
+        "    result = num1 - num2\n",
+        "elif operator == \"*\":\n",
+        "    result = num1 * num2\n",
+        "elif operator == \"/\":\n",
+        "    result = num1 / num2\n",
+        "else:\n",
+        "    result = \"Invalid operator\"\n",
+        "\n",
+        "print(\"Result:\", result)"
+      ]
+    }
+  ]
+}
